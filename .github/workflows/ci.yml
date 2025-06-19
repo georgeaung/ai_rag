@@ -22,4 +22,4 @@ jobs:
 
       - name: Run Smoke Test
         run: |
-          python -c "from insurance_ai_rag.pipeline import run_pipeline; assert 'cancelled' in run_pipeline('12345').lower()"
+          python -c "from ai_rag.pipeline import run_pipeline; assert 'cancelled' in run_pipeline('12345').lower()"
