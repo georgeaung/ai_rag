@@ -1,0 +1,25 @@
+name: CI Test Validation
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install sentence-transformers faiss-cpu
+
+      - name: Run Smoke Test
+        run: |
+          python -c "from insurance_ai_rag.pipeline import run_pipeline; assert 'cancelled' in run_pipeline('12345').lower()"

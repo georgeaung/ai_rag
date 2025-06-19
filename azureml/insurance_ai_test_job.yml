@@ -1,0 +1,9 @@
+name: insurance-ai-test-pipeline
+display_name: Insurance AI Test Pipeline
+experiment_name: insurance_ai_tests
+code: ../
+command: >
+  python tests/test_pipeline.py
+environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu:1
+compute: cpu-cluster
+description: Run unit test on AI pipeline using pytest
