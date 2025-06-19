@@ -28,7 +28,7 @@ az ml job create --file azureml/ai_test_job.yml
 
 You can define a component from this script using a component YAML like:
 ```yaml
-name: run-insurance-ai-explainer
+name: run-ai-explainer
 inputs:
   policy_id: {type: string, default: "12345"}
 command: >
