@@ -21,14 +21,14 @@ az configure --defaults group=<your-rg> workspace=<your-ws>
 
 3. Submit the job:
 ```bash
-az ml job create --file azureml/insurance_ai_test_job.yml
+az ml job create --file azureml/ai_test_job.yml
 ```
 
 ## Registering as a Reusable Component
 
 You can define a component from this script using a component YAML like:
 ```yaml
-name: run-insurance-ai-explainer
+name: run-ai-explainer
 inputs:
   policy_id: {type: string, default: "12345"}
 command: >
