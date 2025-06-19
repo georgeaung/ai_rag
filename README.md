@@ -2,7 +2,7 @@
 
 This project is a Retrieval-Augmented Generation (RAG) system that POC following use cases 
 - explains why insurance policies were cancelled early, combining:
-- Generate  <company> approved project plan for implementing 16 weeks Master Data Management (MDM) implementation for a <industry> company
+- Generate  <company> approved project plan for implementing 16 weeks Master Data Management (MDM) implementation for a [industry] [company]
 
 combining:
     - Structured data from Snowflake or other structured data respository
