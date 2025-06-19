@@ -1,5 +1,5 @@
 import pytest
-from insurance_ai_rag.pipeline import run_pipeline
+from ai_rag.pipeline import run_pipeline
 
 def test_run_pipeline_contains_keywords():
     explanation = run_pipeline("12345")

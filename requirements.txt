@@ -3,3 +3,5 @@ uvicorn
 openai
 snowflake-connector-python
 pydantic
+
+

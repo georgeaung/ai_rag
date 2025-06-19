@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from insurance_ai_rag.pipeline import run_pipeline
-from insurance_ai_rag.scheduler import start_scheduler
+from ai_rag.pipeline import run_pipeline
+from ai_rag.scheduler import start_scheduler
 
 app = FastAPI()
 

@@ -1,5 +1,5 @@
 from apscheduler.schedulers.background import BackgroundScheduler
-from insurance_ai_rag.vector_updater import update_vector_store
+from ai_rag.vector_updater import update_vector_store
 
 scheduler = BackgroundScheduler()
 

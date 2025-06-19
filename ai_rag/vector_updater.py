@@ -1,5 +1,5 @@
 import numpy as np
-from insurance_ai_rag.faiss_store import InMemoryVectorStore
+from ai_rag.faiss_store import InMemoryVectorStore
 from sentence_transformers import SentenceTransformer
 
 model = SentenceTransformer('all-MiniLM-L6-v2')

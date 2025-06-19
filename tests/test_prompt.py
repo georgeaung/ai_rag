@@ -1,4 +1,4 @@
-from insurance_ai_rag.prompt import build_prompt
+from ai_rag.prompt import build_prompt
 
 def test_build_prompt_format():
     policy_data = {

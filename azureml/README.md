@@ -21,7 +21,7 @@ az configure --defaults group=<your-rg> workspace=<your-ws>
 
 3. Submit the job:
 ```bash
-az ml job create --file azureml/insurance_ai_test_job.yml
+az ml job create --file azureml/ai_test_job.yml
 ```
 
 ## Registering as a Reusable Component
@@ -32,7 +32,7 @@ name: run-insurance-ai-explainer
 inputs:
   policy_id: {type: string, default: "12345"}
 command: >
-  python -c "from insurance_ai_rag.pipeline import run_pipeline; print(run_pipeline('${{inputs.policy_id}}'))"
+  python -c "from ai_rag.pipeline import run_pipeline; print(run_pipeline('${{inputs.policy_id}}'))"
 code: ../
 environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu:1
 ```

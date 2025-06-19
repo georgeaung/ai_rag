@@ -17,7 +17,7 @@ combining:
 3. A semantic query like "why was the policy cancelled?" is vectorized.
 4. FAISS retrieves top-k matching chunks by similarity.
 
-## 🧪 Run Locally
+## Run Locally
 
 ```bash
 uvicorn george_ai_rag.api:app --reload

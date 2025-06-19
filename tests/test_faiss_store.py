@@ -1,4 +1,4 @@
-from insurance_ai_rag.faiss_store import InMemoryVectorStore
+from ai_rag.faiss_store import InMemoryVectorStore
 
 def test_faiss_retrieval():
     store = InMemoryVectorStore()

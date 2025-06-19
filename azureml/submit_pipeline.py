@@ -16,7 +16,7 @@ job = CommandJob(
     command="python tests/test_pipeline.py",
     environment="AzureML-sklearn-1.0-ubuntu20.04-py38-cpu:1",
     compute="cpu-cluster",
-    display_name="insurance-ai-test-pipeline"
+    display_name="ai-test-pipeline"
 )
 
 client.jobs.create_or_update(job)
