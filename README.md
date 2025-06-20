@@ -1,14 +1,15 @@
-# RAG AI Explainer For Data Governance 
+# RAG AI Explainer For Data Governance - POC
 
 This project is a Retrieval-Augmented Generation (RAG) system that POC following use cases 
 - explains why insurance policies were cancelled early, combining:
 - Generate  <company> approved project plan for implementing 16 weeks Master Data Management (MDM) implementation for a [industry] [company]
 
-combining:
+combining the followings: 
+
     - Structured data from Snowflake or other structured data respository
-    - Unstructured documents from SharePoint/FileNet
-    - GPT-4 based natural language generation
-    - FAISS-based in-memory vector store for semantic retrieval
+    - Unstructured documents from SharePoint/FileNet \n
+    - GPT-4 based natural language generation \n
+    - FAISS-based in-memory vector store for semantic retrieval \n
 
 ##  How FAISS Document Retrieval Works (FAISS for POC and PineCone or CosmoDB for production )
 
