@@ -1,4 +1,4 @@
-# Azure ML Integration – Insurance AI Explainer
+# Azure ML Integration –  AI Explainer
 
 ## Components
 
